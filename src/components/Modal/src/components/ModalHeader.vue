@@ -1,6 +1,6 @@
 <template>
   <BasicTitle :helpMessage="helpMessage">
-    {{ title }}
+    {{ "基础编码管理系统" }}
   </BasicTitle>
 </template>
 <script lang="ts">

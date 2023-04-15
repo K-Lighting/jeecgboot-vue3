@@ -2,7 +2,7 @@
   <div :class="[`${prefixCls}__header px-2 py-5`, $attrs.class]">
     <BasicTitle :helpMessage="helpMessage" normal>
       <template v-if="title">
-        {{ title }}
+        {{ "基础编码管理系统" }}
       </template>
       <template v-else>
         <slot name="title"></slot>

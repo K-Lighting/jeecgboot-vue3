@@ -1,6 +1,6 @@
 <template>
-  <h2 class="mb-3 text-2xl font-bold text-center xl:text-3xl enter-x xl:text-left">
-    {{ getFormTitle }}
+  <h2 class="title">
+    {{ "基础编码管理系统" }}
   </h2>
 </template>
 <script lang="ts" setup>
@@ -23,3 +23,11 @@
     return titleObj[unref(getLoginState)];
   });
 </script>
+<style>
+  .title {
+    text-align: center;
+    font-size: 22px;
+    color: #1890ff;
+    font-family: 'Microsoft YaHei-Regular';
+  }
+</style>

@@ -2,7 +2,7 @@
   <div class="flex px-2 py-1.5 items-center basic-tree-header">
     <slot name="headerTitle" v-if="$slots.headerTitle"></slot>
     <BasicTitle :helpMessage="helpMessage" v-if="!$slots.headerTitle && title">
-      {{ title }}
+      {{ "基础编码管理系统" }}
     </BasicTitle>
 
     <div class="flex flex-1 justify-end items-center cursor-pointer" v-if="search || toolbar">

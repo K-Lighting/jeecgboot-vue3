@@ -1,7 +1,7 @@
 <template>
   <span>
     <slot></slot>
-    {{ title }}
+    {{ "基础编码管理系统" }}
     <FormOutlined />
   </span>
 </template>

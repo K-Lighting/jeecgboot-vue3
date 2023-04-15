@@ -7,7 +7,7 @@
     :placement="position"
   >
     <template #title>
-      <span>{{ title }}</span>
+      <span>{{ "基础编码管理系统" }}</span>
       <span style="float: right" title="关闭">
         <Icon icon="ant-design:close-outlined" @click="visible = false" />
       </span>

@@ -328,8 +328,8 @@ export default defineComponent({
 
     return () => (
       <BasicDrawer {...attrs} title={t('layout.setting.drawerTitle')} width={330} class="setting-drawer">
-        {unref(getShowDarkModeToggle) && <Divider>{() => t('layout.setting.darkMode')}</Divider>}
-        {unref(getShowDarkModeToggle) && <AppDarkModeToggle class="mx-auto" />}
+        {/* {unref(getShowDarkModeToggle) && <Divider>{() => t('layout.setting.darkMode')}</Divider>}
+        {unref(getShowDarkModeToggle) && <AppDarkModeToggle class="mx-auto" />} */}
         <Divider>{() => t('layout.setting.navMode')}</Divider>
         {renderSidebar()}
         <Divider>{() => t('layout.setting.sysTheme')}</Divider>

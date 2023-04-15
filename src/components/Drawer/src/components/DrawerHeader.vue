@@ -9,7 +9,7 @@
       <span @click="handleClose" v-if="showDetailBack">
         <ArrowLeftOutlined :class="`${prefixCls}__back`" />
       </span>
-      <span v-if="title">{{ title }}</span>
+      <span v-if="title">{{ "基础编码管理系统" }}</span>
     </span>
 
     <span :class="`${prefixCls}__toolbar`">

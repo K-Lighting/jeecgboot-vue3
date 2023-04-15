@@ -2,7 +2,7 @@
   <div :class="bem()" class="flex px-2 py-1.5 items-center">
     <slot name="headerTitle" v-if="slots.headerTitle"></slot>
     <BasicTitle :helpMessage="helpMessage" v-if="!slots.headerTitle && title">
-      {{ title }}
+      {{ "基础编码管理系统" }}
     </BasicTitle>
     <div
       class="flex items-center flex-1 cursor-pointer justify-self-stretch justify-end"

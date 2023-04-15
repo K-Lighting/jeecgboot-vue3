@@ -2,7 +2,7 @@
   <a-card :loading="loading" :body-style="{ padding: '20px 24px 8px' }" :bordered="false">
     <div class="chart-card-header">
       <div class="meta">
-        <span class="chart-card-title">{{ title }}</span>
+        <span class="chart-card-title">{{ "基础编码管理系统" }}</span>
         <span class="chart-card-action">
           <slot name="action"></slot>
         </span>

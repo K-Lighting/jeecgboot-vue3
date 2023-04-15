@@ -49,7 +49,7 @@
           },
         ]"
       >
-        <span class="text"> {{ title }}</span>
+        <span class="text"> {{ "基础编码管理系统" }}</span>
         <Icon :size="16" :icon="getMixSideFixed ? 'ri:pushpin-2-fill' : 'ri:pushpin-2-line'" class="pushpin" @click="handleFixedMenu" />
       </div>
       <ScrollContainer :class="`${prefixCls}-menu-list__content`">

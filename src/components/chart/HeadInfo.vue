@@ -1,6 +1,6 @@
 <template>
   <div class="head-info" :class="center && 'center'">
-    <span>{{ title }}</span>
+    <span>{{ "基础编码管理系统" }}</span>
     <p>{{ content }} <a-icon :type="icon" style="font-size: 24px; color: #2b99ff" /></p>
     <em v-if="bordered" />
   </div>

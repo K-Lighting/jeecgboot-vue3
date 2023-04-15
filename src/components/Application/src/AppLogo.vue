@@ -3,12 +3,12 @@
  * @Description: logo component
 -->
 <template>
-  <div class="anticon" :class="getAppLogoClass" @click="goHome">
+  <!-- <div class="anticon" :class="getAppLogoClass" @click="goHome">
     <img src="../../../assets/images/logo.png" />
     <div class="ml-2 truncate md:opacity-100" :class="getTitleClass" v-show="showTitle">
-      {{ title }}
+      {{ "基础编码管理系统" }}
     </div>
-  </div>
+  </div> -->
 </template>
 <script lang="ts" setup>
   import { computed, unref } from 'vue';

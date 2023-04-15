@@ -1,6 +1,6 @@
 <template>
   <div class="rank">
-    <h4 class="title">{{ title }}</h4>
+    <h4 class="title">{{ "基础编码管理系统" }}</h4>
     <ul class="list" :style="{ height: height ? `${height}px` : 'auto', overflow: 'auto' }">
       <li :key="index" v-for="(item, index) in list">
         <span :class="index < 3 ? 'active' : null">{{ index + 1 }}</span>

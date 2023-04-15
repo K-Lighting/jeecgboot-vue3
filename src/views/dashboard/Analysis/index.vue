@@ -1,5 +1,5 @@
 <template>
-  <IndexDef v-if="indexStyle === 0"></IndexDef>
+  <!-- <IndexDef v-if="indexStyle === 0"></IndexDef>
   <IndexChart v-if="indexStyle === 1"></IndexChart>
   <IndexBdc v-if="indexStyle == 2"></IndexBdc>
   <IndexTask v-if="indexStyle == 3"></IndexTask>
@@ -11,6 +11,9 @@
       <a-radio :value="2">业务统计</a-radio>
       <a-radio :value="3">我的任务</a-radio>
     </a-radio-group>
+  </div> -->
+  <div>
+    <img style="width: auto; height: auto;width: 100%;height: 100%;" src="../../../assets/images/welcome.jpg" />
   </div>
 </template>
 <script lang="ts" setup>

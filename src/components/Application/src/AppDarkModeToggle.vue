@@ -1,9 +1,9 @@
 <template>
-  <div v-if="getShowDarkModeToggle" :class="getClass" @click="toggleDarkMode">
+  <!-- <div v-if="getShowDarkModeToggle" :class="getClass" @click="toggleDarkMode">
     <div :class="`${prefixCls}-inner`"> </div>
     <SvgIcon size="14" name="sun" />
     <SvgIcon size="14" name="moon" />
-  </div>
+  </div> -->
 </template>
 <script lang="ts" setup>
   import { computed, unref } from 'vue';

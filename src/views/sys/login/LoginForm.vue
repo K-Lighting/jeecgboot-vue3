@@ -28,34 +28,34 @@
       </ACol>
     </ARow>
 
-    <ARow class="enter-x">
+   <!--  <ARow class="enter-x">
       <ACol :span="12">
-        <FormItem>
+        <FormItem> -->
           <!-- No logic, you need to deal with it yourself -->
-          <Checkbox v-model:checked="rememberMe" size="small">
+         <!--  <Checkbox v-model:checked="rememberMe" size="small">
             {{ t('sys.login.rememberMe') }}
           </Checkbox>
         </FormItem>
       </ACol>
-      <ACol :span="12">
-        <FormItem :style="{ 'text-align': 'right' }">
+       <ACol :span="12">
+        <FormItem :style="{ 'text-align': 'right' }">  -->
           <!-- No logic, you need to deal with it yourself -->
-          <Button type="link" size="small" @click="setLoginState(LoginStateEnum.RESET_PASSWORD)">
+          <!-- <Button type="link" size="small" @click="setLoginState(LoginStateEnum.RESET_PASSWORD)">
             {{ t('sys.login.forgetPassword') }}
           </Button>
         </FormItem>
-      </ACol>
-    </ARow>
+      </ACol> 
+    </ARow> -->
 
     <FormItem class="enter-x">
-      <Button type="primary" size="large" block @click="handleLogin" :loading="loading">
+      <Button class="login-button" type="primary" size="large" block @click="handleLogin" :loading="loading">
         {{ t('sys.login.loginButton') }}
       </Button>
       <!-- <Button size="large" class="mt-4 enter-x" block @click="handleRegister">
               {{ t('sys.login.registerButton') }}
             </Button> -->
     </FormItem>
-    <ARow class="enter-x">
+    <!-- <ARow class="enter-x">
       <ACol :md="8" :xs="24">
         <Button block @click="setLoginState(LoginStateEnum.MOBILE)">
           {{ t('sys.login.mobileSignInFormTitle') }}
@@ -71,16 +71,16 @@
           {{ t('sys.login.registerButton') }}
         </Button>
       </ACol>
-    </ARow>
+    </ARow> -->
 
-    <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>
+    <!-- <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>
 
     <div class="flex justify-evenly enter-x" :class="`${prefixCls}-sign-in-way`">
       <a @click="onThirdLogin('github')" title="github"><GithubFilled /></a>
       <a @click="onThirdLogin('wechat_enterprise')" title="企业微信"> <icon-font class="item-icon" type="icon-qiyeweixin3" /></a>
       <a @click="onThirdLogin('dingtalk')" title="钉钉"><DingtalkCircleFilled /></a>
       <a @click="onThirdLogin('wechat_open')" title="微信"><WechatFilled /></a>
-    </div>
+    </div> -->
   </Form>
   <!-- 第三方登录相关弹框 -->
   <ThirdModal ref="thirdModalRef"></ThirdModal>
@@ -122,8 +122,8 @@
   const rememberMe = ref(false);
 
   const formData = reactive({
-    account: 'admin',
-    password: '123456',
+    account: '',
+    password: '',
     inputCode: '',
   });
   const randCodeData = reactive({
@@ -194,3 +194,12 @@
     handleChangeCheckCode();
   });
 </script>
+<style>
+  .login-button {
+    padding: 0 15px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 8px;
+    width: 100%;
+  }
+</style>
